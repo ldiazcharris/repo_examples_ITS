@@ -6,14 +6,20 @@ Name: SimpleExample.railAID
 
 ## Step by step
 
-The signalling generation process used in this work was designed following signalling principles defined by Transport for New South Wales (TfNSW) [23]. These principles are based on the concepts defined by the Institution of Railway Signal Engineers (IRSE) [24], the Rail Industry Safety and Standards Board (RISSB) [25]. These principles include: 
+The signalling generation process used in this work was designed following signalling principles defined by Transport for New South Wales (TfNSW). These principles are based on the concepts defined by the Institution of Railway Signal Engineers (IRSE), the Rail Industry Safety and Standards Board (RISSB). These principles include: 
 
 (P1) Having a limited right-to-use (henceforth ”authority”) to one rail element or set of elements.
+
 (P2) Allowing/Denying movement authorities unambiguously.
+
 (P3) Warning train drivers about dangers with enough time to react.
+
 (P4) Enough granularity to support train operations.
+
 (P5) Warning train drivers about the end of the network.
+
 (P6) Waning train drivers about any movable infrastructure such as switches or level crossings or static such as platforms.
+
 (P7) Avoiding train blocking facilities or branches whenever it is possible.
 
 ### A. Import the railway layout description
@@ -104,7 +110,7 @@ after the platform. This is implemented using Algorithm 6.
 
 Every switch has three characteristic branches: start, continue and detour branch. Start branches need a departure signal and a manoeuvring signal to allow movements to the continuing branch and a detour branch respectively. Continue and detour branches have the same signals but in the opposite direction, allowing trains to return to the start branch. This is defined in Algorithm 7 and then in Figure 7 is applied on every switch of thid  example. 
 
-The signals in blue colour are named based on the point they want to protect: S for Starting branch, C for the Continue branch and B for the Detour branch.  However, there are other signals named with H that are not protecting explicitly any of the three points switches have.
+The signals for switches are named based on the point they want to protect: S for Starting branch, C for the Continue branch and B for the Detour branch.  However, there are other signals named with H that are not protecting explicitly any of the three points switches have.
 
 Signals generated for
 
